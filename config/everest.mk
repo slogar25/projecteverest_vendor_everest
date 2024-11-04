@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
 # Vanilla and Gapps
 WITH_GAPPS ?= true
 ifeq ($(WITH_GAPPS),true)
-$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+$(call inherit-product-if-exists, vendor/google/gms/products/gms.mk)
 else
 include vendor/everest/config/vanilla.mk
 endif
